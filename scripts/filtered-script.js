@@ -78,14 +78,14 @@ temples.push(
     location: "Guayaquil, Ecuador",
     dedicated: "1999, August, 1",
     area: 70848,
-    imageUrl: "https://media.ldscdn.org/images/media-library/temples/guayaquil-ecuador/guayaquil-ecuador-temple-lds-958135-wallpaper.jpg"
+    imageUrl: "https://www.churchofjesuschrist.org/imgs/e2057c1ca287a6faa2ecebe1ee8d4d4cd9dc256b/full/250%2C/0/default"
   },
   {
     templeName: "Arequipa Perú",
     location: "Arequipa, Perú",
     dedicated: "2019, December, 15",
     area: 11600,
-    imageUrl: "https://media.ldscdn.org/images/media-library/temples/arequipa-peru/arequipa-peru-temple-lds-273999-wallpaper.jpg"
+    imageUrl: "https://www.churchofjesuschrist.org/imgs/cea11ee017a94c829c8a630b43be3e369edf4103/full/250%2C/0/default"
   }
 );
 
