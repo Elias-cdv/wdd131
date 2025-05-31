@@ -95,17 +95,25 @@ function renderTemples(templesToRender) {
   container.innerHTML = "";
 
   templesToRender.forEach((temple) => {
-    const card = document.createElement("section");
+    const card = document.createElement("div");
+    card.classList.add("card");
+
     card.innerHTML = `
-      <h3>${temple.templeName}</h3>
-      <p><strong>Location:</strong> ${temple.location}</p>
-      <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-      <p><strong>Area:</strong> ${temple.area.toLocaleString()} ft²</p>
-      <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+      <figure>
+        <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+        <figcaption>
+          <h3>${temple.templeName}</h3>
+          <p><strong>Location:</strong> ${temple.location}</p>
+          <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+          <p><strong>Area:</strong> ${temple.area.toLocaleString()} ft²</p>
+        </figcaption>
+      </figure>
     `;
+
     container.appendChild(card);
   });
 }
+
 
 
 function filterTemples(criteria) {
@@ -138,4 +146,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
+document.getElementById("last-modified").textContent = document.lastModified;

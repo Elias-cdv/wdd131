@@ -82,3 +82,19 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+
+.card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.card figcaption {
+  margin-top: 0.5rem;
+}
